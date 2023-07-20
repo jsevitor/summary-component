@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+	/* Colors */
+	/* Primary */
+	--lightRed: hsl(0, 100%, 67%);
+	--orangeyYellow: hsl(39, 100%, 56%);
+	--greenTeal: hsl(166, 100%, 37%);
+	--cobaltBlue: hsl(234, 85%, 45%);
+	
+	/* Gradients */
+	--lightSlateBlue: hsl(252, 100%, 67%);
+	--lightRoyalBlue: hsl(241, 81%, 54%);
+	--violetBlue: hsla(256, 72%, 46%, 1);
+	--persianBlue: hsla(241, 72%, 46%, 0);
+	
+	/* Neutral */
+	--white: hsl(0, 0%, 100%);
+	--paleBlue: hsl(221, 100%, 96%);
+	--pale: rgba(224, 234, 255, 0.7);
+	--lightLavender: hsl(241, 100%, 89%);
+	--darkGrayBlue: hsl(224, 30%, 27%);
+	--lightBlack: rgb(0, 0, 0, 0.5);
+	--black: rgb(48, 59, 89);
+	--shadow: rgb(233, 239, 253);
+}
+
+* {
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 18px;
+    margin: 0;
+    padding: 0;	
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 99%;
+	background-color: var(--white);
+}
+
+
+.container-bg {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white);
+}
+
+.container-bg .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-bg .container .box1 {
+	width: 18rem;
+	height: 25rem;
+	text-align: center;
+	border-radius: 1rem;
+	background: linear-gradient(180deg, var(--lightSlateBlue), var(--lightRoyalBlue));
+	padding: 2rem;
+	display: block;
+}
+
+.container-bg .container .box1 .heading {
+	color: var(--pale);
+	margin-bottom: 2rem;
+}
+
+.container-bg .container .box1 .circle {
+	background: linear-gradient(180deg, var(--violetBlue), var(--persianBlue));
+	border-radius: 100%;
+	width: 9rem;
+	height: 9rem;
+	margin: 0 auto;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container-bg .container .box1 .circle #grade {
+	font-size: 3rem;
+	color: var(--white);
+	font-weight: bold;
+}
+
+.container-bg .container .box1 .circle #total {
+	font-size: 0.8rem;
+	color: var(--pale);
+}
+
+.container-bg .container .note h2 {
+	color: var(--white);
+	font-size: 1.5rem;
+	margin: 2rem 0 1rem 0;
+}
+
+.container-bg .container .note p {
+	font-size: 0.8rem;
+	padding: 0 1.5rem;
+	color: var(--pale);
+}
+
+.container-bg .container .box2 {
+	width: 18rem;
+	height: 25rem;
+	border-radius: 0 1rem 1rem 0;
+	box-shadow: 5px 5px 5px var(--shadow);
+	background-color: var(--white);
+	padding: 2rem;
+}
+
+.container-bg .container .box2 .heading {
+	margin-bottom: 1.5rem;
+}
+
+.container-bg .container .box2 .category {
+	width: 100%;
+	height: 2.5rem;
+	padding: 0 0.8rem;
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--black);
+}
+
+.container-bg .container .box2 .category .total {
+	color: var(--lightBlack) ;
+}
+
+.container-bg .container .box2 #reaction {
+	background-color: rgba(255, 87, 87, 0.08);
+}
+
+.container-bg .container .box2 #reaction h3 {
+	color: var(--lightRed) ;
+}
+
+.container-bg .container .box2 #memory {
+	background-color: rgba(255, 176, 31, 0.08);
+}
+
+.container-bg .container .box2 #memory h3 {
+	color: var(--orangeyYellow);
+}
+
+.container-bg .container .box2 #verbal {
+	background-color: rgba(0, 189, 145, 0.08);
+}
+
+.container-bg .container .box2 #verbal h3 {
+	color: var(--greenTeal);
+}
+
+.container-bg .container .box2 #visual {
+	background-color: rgba(17, 37, 212, 0.08);
+}
+
+.container-bg .container .box2 #visual h3 {
+	color: var(--cobaltBlue);
+}
+
+.container-bg .container .box2 .btn {
+	width: 100%;
+	height: 2.5rem;
+	padding: 0 0.8rem;
+	margin: 2rem 0;
+	border-radius: 2rem;
+	background-color: var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	font-size: 0.8rem;
+}
+
+.container-bg .container .box2 .btn:hover {
+	background: linear-gradient(180deg, var(--lightSlateBlue), var(--lightRoyalBlue));
+	cursor: pointer;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+
+.attribution a { 
+	font-size: 11px;	
+	color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px){
+	
+	.container-bg .container {
+		width: 100%;
+		display: block;
+	}
+
+	.container-bg .container .box1 {
+		width: 100%;
+		height: 20rem;
+		padding: 1rem 2rem;
+		border-radius: 0 0 1rem 1rem;
+	}
+	
+	.container-bg .container .box1 .heading {
+		margin-bottom: 1rem;
+	}
+
+
+	.container-bg .container .note h2 {
+		margin: 1rem 0;
+	}
+	
+	.container-bg .container .box2 {
+		width: 100%;
+		border-radius: 0;
+		box-shadow: 5px 5px 5px var(--shadow);
+	}
+
+}
